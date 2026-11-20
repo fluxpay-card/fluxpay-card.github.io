@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#101114" />
+    <meta name="robots" content="noindex" />
+    <title>Page not found — FluxPay</title>
+    <meta name="description" content="This page doesn't exist. Head back to FluxPay." />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <style>
+      @font-face { font-family: 'Geist'; src: url('/fonts/Geist-Variable.woff2') format('woff2'); font-weight: 100 900; font-display: swap; }
+      @font-face { font-family: 'Geist Mono'; src: url('/fonts/GeistMono-Variable.woff2') format('woff2'); font-weight: 100 900; font-display: swap; }
+      :root { --obsidian: #101114; --ivory: #f4f2ed; --champagne: #b9a47c; --platinum: #c7cbd0; --muted: #8b8f96; --line-d: rgba(199, 203, 208, .12); }
+      * { box-sizing: border-box; margin: 0; }
+      html, body { height: 100%; }
+      body {
+        display: grid; place-items: center; padding: 24px 16px; background: var(--obsidian); color: var(--ivory);
+        font-family: 'Geist', ui-sans-serif, system-ui, sans-serif; -webkit-font-smoothing: antialiased;
+        background-image: radial-gradient(60% 50% at 80% 10%, rgba(185, 164, 124, .22), transparent 70%);
+      }
+      ::selection { background: var(--champagne); color: var(--obsidian); }
+      main { width: min(560px, 100%); }
+      .logo { display: inline-flex; align-items: center; gap: 10px; color: var(--ivory); text-decoration: none; font-weight: 640; font-size: 19px; letter-spacing: -.03em; }
+      .logo svg { color: var(--platinum); }
+      .code { margin-top: 64px; font-family: 'Geist Mono', ui-monospace, monospace; font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+      h1 { margin-top: 16px; font-size: clamp(40px, 9vw, 72px); line-height: .98; letter-spacing: -.05em; font-weight: 600; text-wrap: balance; }
+      p { margin-top: 24px; font-size: 17px; line-height: 1.55; color: rgba(244, 242, 237, .7); text-wrap: pretty; }
+      .actions { margin-top: 40px; display: flex; gap: 12px; flex-wrap: wrap; }
+      .btn {
+        display: inline-flex; align-items: center; gap: 10px; height: 48px; padding: 0 24px; border-radius: 999px; text-decoration: none;
+        font-weight: 550; font-size: 15px; letter-spacing: -.01em; cursor: pointer;
+        transition: transform .22s cubic-bezier(.16, 1, .3, 1), background-color .22s, border-color .22s;
+      }
+      .btn:active { transform: scale(.97); }
+      .btn:focus-visible { outline: 2px solid var(--champagne); outline-offset: 3px; }
+      .btn-ivory { background: var(--ivory); color: var(--obsidian); }
+      .btn-ivory:hover { background: #fff; }
+      .btn-line { border: 1px solid var(--line-d); color: var(--ivory); }
+      .btn-line:hover { border-color: var(--platinum); }
+      @media (prefers-reduced-motion: reduce) { .btn { transition: none; } }
+    </style>
+  </head>
+  <body>
+    <main>
+      <a class="logo" href="/" aria-label="FluxPay home">
+        <svg width="30" height="19" viewBox="470 195 805 500" fill="currentColor" aria-hidden="true">
+          <path d="M483 566 C545 515 640 395 712 300 C760 238 812 207 892 207 L1262 208 C1212 262 1162 318 1092 320 L828 323 C770 325 735 352 690 405 C625 482 548 552 483 566 Z" />
+          <path d="M483 683 L688 440 C728 395 772 380 842 380 L1127 381 L1030 485 C1012 499 1000 502 978 502 L862 502 C812 504 784 528 744 574 L664 666 C651 679 640 683 624 683 Z" />
+          <path d="M695 683 L804 556 C817 544 832 540 852 540 L953 540 L838 666 C824 679 811 683 794 683 Z" />
+        </svg>
+        FluxPay
+      </a>
+      <p class="code">Error 404</p>
+      <h1>This page isn’t here.</h1>
+      <p>The link may be old or mistyped. Everything FluxPay has is on the home page: the cards, the fees, the $FLXP token and the waitlist.</p>
+      <div class="actions">
+        <a class="btn btn-ivory" href="/">
+          Back to FluxPay
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg>
+        </a>
+        <a class="btn btn-line" href="/#waitlist">Join the waitlist</a>
+      </div>
+    </main>
+  </body>
+</html>
